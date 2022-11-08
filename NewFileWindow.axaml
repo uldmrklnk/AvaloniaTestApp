@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="320"
+		Width="400"
+		Height="320"
+        x:Class="AvaloniaApplication2.NewFileWindow"
+        Title="New file">
+	<StackPanel Margin="20" HorizontalAlignment="Center">
+		<ComboBox CornerRadius="30" HorizontalContentAlignment="Center" PlaceholderText="Status" Width="360">
+			<TextBlock>Input</TextBlock>
+			<TextBlock>Output</TextBlock>
+			<TextBlock>Input and Output</TextBlock>
+		</ComboBox>
+		<Grid>
+			<TextBox CornerRadius="30" Width="290" HorizontalAlignment="Left" Margin="0 10 0 10" Name="filePath"/>
+			<Button CornerRadius="30" HorizontalAlignment="Right" Click="OnBrowseClick">Browse</Button>
+		</Grid>
+		<TextBox CornerRadius="30" Margin="0 0 0 10" HorizontalContentAlignment="Center">Sheet name</TextBox>
+		<TextBox CornerRadius="30" Margin="0 0 0 10" HorizontalContentAlignment="Center">Headers row index</TextBox>
+		<ComboBox CornerRadius="30" PlaceholderText="Date format" Width="360" HorizontalContentAlignment="Center">
+			<TextBlock>mm/dd/yyyy</TextBlock>
+			<TextBlock>dd.mm.yyyy</TextBlock>
+			<TextBlock>yyyy-mm-dd</TextBlock>
+		</ComboBox>
+		<Button CornerRadius="30" Width="360" Margin="0 10 0 10" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Click="AddFileToTableClick">Add</Button>
+		<Button CornerRadius="30" Width="360" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Click="CancelInputClick">Cancel</Button>
+	</StackPanel>
+</Window>

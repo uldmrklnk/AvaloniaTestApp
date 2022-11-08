@@ -1,0 +1,12 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication2.MainWindow"
+        Title="Exadel IDP">
+	<StackPanel Height="200" Margin="20" VerticalAlignment="Bottom" Orientation="Vertical">
+		<Button Click="AddFileClick" Width="360" Margin="0 10 0 10" HorizontalAlignment="Center" HorizontalContentAlignment="Center" CornerRadius="30" Content="Add File"/>
+		<Button Click="CreateOutputFileClick" Width="360" HorizontalAlignment="Center" HorizontalContentAlignment="Center" CornerRadius="30" Content="Create output file"/>
+	</StackPanel>
+</Window>
